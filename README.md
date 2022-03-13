@@ -116,7 +116,7 @@ I suggest installing a cool shell too. Use `fish` and `starship` !
 Run these commands to configure fish:
 ```bash
 set fish_greeting
-echo "\nstarship init fish | source\n" >> ~/.config/fish/config.fish
+echo "starship init fish | source" >> ~/.config/fish/config.fish
 ```
 
 Nerd Fonts are needed for some of the programs used. Install it by running:
