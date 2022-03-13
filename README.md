@@ -115,7 +115,7 @@ active-opacity = 0.95;
 I suggest installing a cool shell too. Use `fish` and `starship` ! 
 Run these commands to configure fish:
 ```bash
-set fish_greeting
+echo "set fish_greeting" >> ~/.config/fish/config.fish
 echo "starship init fish | source" >> ~/.config/fish/config.fish
 ```
 
