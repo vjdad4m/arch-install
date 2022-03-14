@@ -13,7 +13,7 @@ Mount the main partition by running `mount /dev/sda1 /mnt` . Download the linux 
 
  Now you need to setup the arch linux environment. Run these commands:
  ```bash
- ln -sf /usr/share/zoneinfo/Europe/Budapest /etc/localtime
+ ln -sf /usr/share/zoneinfo/<region>/<city> /etc/localtime
  hwclock --systohc
  pacman -S sudo nano vim grub dhcpcd iwd
  ```
@@ -27,7 +27,7 @@ Edit these files:
 | /etc/vconsole.conf | KEYMAP=\<keymap\> |
 | /etc/hostname | arch |
 
-Run `mkinitcpio -P` . Set root password using `passwd` . Create a user profile by running `useradd -G wheel -m <username>` . Set the password by runnning `passwd <username>` . Now run `visudo` and add `<username> ALL=(ALL) ALL` . 
+Run `mkinitcpio -P` . Set root password using `passwd` . Create a user profile by running `useradd -G wheel -m <username>` . Set the password by runnning `passwd <username>` . Now run `visudo` and add `<username> ALL=(ALL:ALL) ALL` . 
 
 Install the bootloader by running these commands:
 ```bash
