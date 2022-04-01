@@ -41,6 +41,7 @@ Finally you need to install a window manager. Run this command:
 
 ```bash
 pacman-key --init
+pacman-key --populate archlinux
 pacman -S xorg lightdm-gtk-greeter i3-gaps dmenu i3status ttf-dejavu
 systemctl enable lightdm
 ```
